@@ -39,6 +39,7 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 1.466666667;
+    background-color: #E8DBB8;
 }
 
 h1,
@@ -54,7 +55,7 @@ strong {
     font-size: 1.625em;
     font-family: "Avenir Next", Arial, sans-serif;
     font-weight: normal;
-    color: #919395;
+    color: white;
     margin: 0;
     line-height: 1.2941176470588236;
     display: inline-block;
@@ -106,7 +107,7 @@ Links
 a {
     -webkit-transition: .2s;
        -moz-transition: .2s;
-            transition: .2s;
+            transition: background-color .2s, color .2s;
 }
 
 a,
@@ -132,13 +133,14 @@ a:active {
 a:focus {
     border-bottom: 1px solid #0072ce;
     color: #0072ce;
-    outline: thin dotted;
     text-decoration: none;
 }
 
 a.title-link {
-    color: #75787B;
     border-bottom: none;
+    color: #423f37;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 a.title-link:hover,
@@ -178,16 +180,16 @@ Navigation
 .sidebar-nav a:link,
 .sidebar-nav a:visited {
   border-bottom: none;
-  color: #75787b;
+  color: #494949;
 }
 .sidebar-nav li:hover,
 .sidebar-nav a:focus,
 .sidebar-nav li:active,
 .sidebar-nav .sidebar-nav-active {
-  color: #75787b;
-  border-left: 4px solid {{ site.brand_color }};
+  color: #494949;
+  border-left: 4px solid #065100;
   background-color: transparent;
-  border-bottom: 1px solid #babbbd;
+  font-weight: 600;
 }
 .sidebar-nav li:hover,
 .sidebar-nav li:active,
@@ -209,7 +211,7 @@ Navigation
 }
 .sidebar-nav li {
   list-style: none;
-  border-bottom: 1px solid #babbbd;
+  border-bottom: 1px solid #494949;
   font-size: 1.125em;
   padding-left: 4px;
 }
@@ -249,9 +251,12 @@ section:before {
 
 header {
     width: 100%;
-    border-bottom: 4px solid {{ site.brand_color }};
-    background-color: #fff;
-    padding: 2em 0;
+    background-color: #E8DBB8;
+    background-image: url('../img/header-border.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 2em 0 3.5em 0;
+    background-size: 2rem;
 }
 
 
@@ -271,7 +276,7 @@ footer {
     display: table-row; /* for sticky footer */
     height: 1px; /* for sticky footer */
     border-top: 2px solid #babbbd;
-    background: #f1f2f2;
+    background: #B29E7A;
     width: 100%;
     font-size: 0.875em;
 }
@@ -329,7 +334,7 @@ Style
 */
 
 .intro {
-    color: #75787B;
+    color: #545454;
 }
 
 li h4 {
@@ -468,8 +473,8 @@ Desktop Styles
         list-style: none;
         display: block;
         float: left;
-        height: 4.0625em;
-        max-height: 4.0625em;
+        height: 5em;
+        max-height: 5em;
         background-color: #E7E7E6;
         border-left: 1px solid #BABBBD;
         width: 30%;
@@ -478,7 +483,8 @@ Desktop Styles
     .repo-list a:link,
     .repo-list a:visited {
         display: block;
-        max-height: 4.0625em;
+        max-height: 5em;
+        height: 5em;
         background-color: #E7E7E6;
         border-bottom: none;
         padding: .625em 1em 1em 1em;
@@ -493,7 +499,7 @@ Desktop Styles
         text-align: center;
         border-left: none;
         line-height: 60px;
-        padding: .625em 1em;
+        padding: 1em 1em;
         width: 10%;
     }
 
@@ -503,14 +509,8 @@ Desktop Styles
 
     /* keep the repo list containers the same height, but account for the need for more height */
 
-    .repo-list li {
-        height: 6em;
-        max-height: 6em;
-    }
-
-    .repo-list a:link,
-    .repo-list a:visited {
-        max-height: 6em;
+    #repositories {
+        display: none;
     }
 }
 

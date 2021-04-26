@@ -9,8 +9,8 @@ collections:
     permalink: /:path/
 
 # Title
-name: DOCter
-subtitle: A Jekyll template for project documentation
+name: Delphi Wiki
+subtitle: An online party game inspired by Codenames
 
 # When using this template with a project page set the baseurl to '/project-name'
 # For user/organization pages set this to an empty string
@@ -21,8 +21,8 @@ baseurl: '/DOCter'
 
 # Author/Organization info to be displayed in the templates
 author:
-  name: Name
-  url: http://localhost:4000
+  name: venashial
+  url: https://venashial.design
 
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
 logourl:
@@ -34,23 +34,26 @@ navigation:
 - text: Home
   url: ./
   internal: true
-- text: Example Page
-  url: example_page/
+- text: FAQ
+  url: faq/
   internal: true
-- text: DOCter Repo
-  url: https://github.com/cfpb/DOCter
-  internal: false
 
 # Repo list
 # List repos that you would like to appear on the homepage here
 repos:
-- name: DOCter
-  description: Jekyll template for docs
-  url: https://github.com/cfpb/DOCter
+- name: Display
+  description: Viewing display for Delphi
+  url: https://github.com/delphi-game/display
+- name: Remote
+  description: The remote control for players
+  url: https://github.com/delphi-game/remote
+- name: Server
+  description: Manage rooms, players, & data
+  url: https://github.com/delphi-game/server
 
 # Style Variables
 brand_color: "#2cb34a"
 
 # Offline caching
 offline_cache: false
-cache_name: DOCter-v1.1
+cache_name: Delphi-Wiki
