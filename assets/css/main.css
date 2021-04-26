@@ -146,7 +146,7 @@ a.title-link {
 a.title-link:hover,
 a.title-link:active,
 a.title-link:focus {
-    color: #7eb8dd;
+    color: #B29E7A;
     border-bottom: none;
 }
 
@@ -182,20 +182,18 @@ Navigation
   border-bottom: none;
   color: #494949;
 }
-.sidebar-nav li:hover,
-.sidebar-nav a:focus,
-.sidebar-nav li:active,
-.sidebar-nav .sidebar-nav-active {
+
+li.active {
   color: #494949;
   border-left: 4px solid #065100;
-  background-color: transparent;
   font-weight: 600;
 }
-.sidebar-nav li:hover,
-.sidebar-nav li:active,
-.sidebar-nav .sidebar-nav-active {
-  padding-left: 0;
+
+.sidebar-nav li:hover {
+    color: #222222;
+    background-color: rgba(32, 32, 32, 0.151);
 }
+
 .sidebar-nav a:focus {
   padding-left: 6px;
 }

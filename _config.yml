@@ -34,6 +34,12 @@ navigation:
 - text: Home
   url: ./
   internal: true
+- text: Rules
+  url: Rules/
+  internal: true
+- text: Setup
+  url: Setup/
+  internal: true
 - text: FAQ
   url: FAQ/
   internal: true
