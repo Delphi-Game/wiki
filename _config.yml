@@ -35,7 +35,7 @@ navigation:
   url: ./
   internal: true
 - text: FAQ
-  url: faq/
+  url: FAQ/
   internal: true
 
 # Repo list
