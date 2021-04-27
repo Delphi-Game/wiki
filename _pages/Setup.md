@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Setup"
+title:  "setup"
 ---
 
 ### Step 1: Set up the Display
